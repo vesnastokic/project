@@ -1,6 +1,11 @@
 import React from "react";
 
 const LoginForm = () => {
+  const handleLogin = () => {
+    // Open a new empty page when login button is clicked
+    window.open('', '_blank');
+  };
+
   return (
     <div className="login-form">
       <h3
@@ -36,6 +41,7 @@ const LoginForm = () => {
         }}
       />
       <button
+        onClick={handleLogin} // Call handleLogin function when button is clicked
         style={{
           backgroundColor: "#333",
           color: "#fff",
@@ -52,3 +58,4 @@ const LoginForm = () => {
 };
 
 export default LoginForm;
+
